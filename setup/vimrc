@@ -14,6 +14,14 @@ map <C-n> :NERDTreeToggle<CR>
 " toggle tagbar via ctrl-m
 map <C-m> :TagbarToggle<CR>
 
+" close buffer but not split window with ctrl-c
+nnoremap <C-c> :bp\|bd #<CR>
+
+" switch split windows with ctrl-j and ctrl-k
+map <C-J> <C-W>j<C-W>_
+map <C-K> <C-W>k<C-W>_
+map <C-H> <C-WH>
+
 " make backspace work like most other programs
 set backspace=2
 
@@ -23,7 +31,7 @@ set guicursor+=n-v-c:blinkon0
 " Configuration Section
 
 "enable copying to clipboard
-set clipboard=unnamed
+"set clipboard=unnamed
 
 " show line numbers, show position, use mouse to scroll 
 set number
@@ -40,6 +48,7 @@ set tabstop=4
 set shiftwidth=4
 set smarttab
 set expandtab
+set autoindent
 
 " Always display the status line
 set laststatus=2
@@ -61,6 +70,9 @@ Plugin 'vim-airline/vim-airline-themes'
 
 Plugin 'vim-syntastic/syntastic'
 
+" automatically close parentheses
+Plugin 'delimitMate.vim'
+
 "ultisnips
 " Track the engine.
 Plugin 'SirVer/ultisnips'
@@ -71,7 +83,7 @@ call vundle#end()
 
 " Colors
 set background=light
-colorscheme solarized
+colorscheme artesanal 
 " YCM settings
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
