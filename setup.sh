@@ -3,7 +3,7 @@
 
 sudo apt-get update
 sudo apt-get upgrade
-sudoe apt-get install git
+sudo apt-get install git
 
 # get vundle (a package manager for vim)
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
