@@ -26,13 +26,14 @@ cd
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # get and install cmake (needed for YouCompleteMe)
-sudo apt-get install cmake
+sudo apt-get install build-essential cmake
 
 # make sure we have python headers installed
 sudo apt-get install python-dev python3-dev
 
 # install YouCompleteMe (autocompletion for python in vim)
-cd ~/.vim/bundle/YouCompleteMe
+cd
+cd .vim/bundle/YouCompleteMe
 ./install.py
 cd
 
