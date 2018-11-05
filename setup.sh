@@ -33,9 +33,12 @@ sudo apt-get install python-dev python3-dev
 
 # install YouCompleteMe (autocompletion for python in vim)
 cd
+git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
+git submodule update --init --recursive
 cd .vim/bundle/YouCompleteMe
 ./install.py
 cd
 
 # install other vundle plugins
 vim +PluginInstall +qall
+
