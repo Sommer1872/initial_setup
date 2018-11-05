@@ -4,10 +4,10 @@
 sudo apt-get update
 sudo apt-get upgrade
 
-# get miniconda
-wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash Miniconda3-latest-Linux-x86_64.sh
-rm Miniconda3-latest-Linux-x86_64.sh
+# get and install miniconda
+#wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+#bash Miniconda3-latest-Linux-x86_64.sh
+#rm Miniconda3-latest-Linux-x86_64.sh
 
 # move things to home directory and rename (hidden) 
 cd setup
