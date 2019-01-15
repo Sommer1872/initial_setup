@@ -63,8 +63,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 
-Plugin 'Valloric/YouCompleteMe'
-
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
@@ -78,6 +76,8 @@ Plugin 'delimitMate.vim'
 Plugin 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
 Plugin 'honza/vim-snippets'
+
+" Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
