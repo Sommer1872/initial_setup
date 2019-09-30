@@ -1,8 +1,8 @@
 #!/bin/bash
 # requires python
 
-sudo apt-get update
-sudo apt-get upgrade
+# sudo apt-get update
+# sudo apt-get upgrade
 
 # move things to home directory and rename (hidden) 
 cd setup
@@ -27,4 +27,3 @@ rm Miniconda3-latest-Linux-x86_64.sh
 
 # install other vundle plugins
 vim +PluginInstall +qall
-
