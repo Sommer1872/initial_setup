@@ -30,7 +30,7 @@ sudo apt update
 sudo apt install python3-pip -y
 pip3 install --user pipenv
 
-sudo apt install python3.7
+sudo apt install python3.7 -y
 
 # install other vundle plugins
 vim +PluginInstall +qall
