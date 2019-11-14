@@ -21,9 +21,16 @@ cd
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # get and install miniconda
-wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash Miniconda3-latest-Linux-x86_64.sh
-rm Miniconda3-latest-Linux-x86_64.sh
+# wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+# bash Miniconda3-latest-Linux-x86_64.sh
+# rm Miniconda3-latest-Linux-x86_64.sh
+
+# install python, pip and pipenv
+sudo apt update
+sudo apt install python3-pip -y
+pip3 install --user pipenv
+
+sudo apt install python3.7
 
 # install other vundle plugins
 vim +PluginInstall +qall
