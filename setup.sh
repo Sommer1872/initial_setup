@@ -21,7 +21,17 @@ cd
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # get and install miniconda
-wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sha256sum Miniconda3-latest-Linux-x86_64.sh
+echo "Please verify the hash above corresponds to the one found on https://docs.conda.io/en/latest/miniconda.html"
+while true; do
+    read -p "Do they match? [yes/no] `echo $'\n> '`" yn
+    case $yn in
+        [Yy]* ) break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
 bash Miniconda3-latest-Linux-x86_64.sh
 rm Miniconda3-latest-Linux-x86_64.sh
 
